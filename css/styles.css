@@ -112,10 +112,26 @@ iframe {
 
 /* TARJETAS METODOLOGIA*/
 
+.metodologia {
+    width: 100%;
+}
+
+.meto__titulo {
+    text-align: center;
+    padding-block: 1.2rem;
+}
+
+.meto__titulo h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(212, 116, 48);
+}
+
 .tarjetas {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 
 .card-body {
@@ -130,8 +146,9 @@ iframe {
 }
 
 .btn-primary:hover {
-    background-color: black;
-    color: rgb(212, 116, 48);
+    background-color: rgb(104, 94, 94);
+    color: white;
+    border-color: burlywood;
 }
 
 /* FOOTER */
