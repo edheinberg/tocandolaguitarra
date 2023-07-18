@@ -110,54 +110,29 @@ iframe {
     min-width: 40%;
 }
 
-/* METODOLOGIAS */
+/* TARJETAS METODOLOGIA*/
 
-.metodologia__tipos {
+.tarjetas {
     display: flex;
-    width: 100%;
     gap: 1.5rem;
-    padding: 25px 0 25px 25px;
-    flex: 1;
-
+    justify-content: center;
 }
 
-.metodologia__clasificacion {
+.card-body {
     display: flex;
     flex-direction: column;
-    background-color: burlywood;
-    border-radius: 25px;
-    flex: 1;
-
+    align-items: center;
 }
 
-.meto__foto {
-    max-width: 100%;
-    padding: 1.5rem;
+.btn-primary {
+    background-color: rgb(212, 116, 48);
+    border-color: white;
 }
 
-.meto__info {
-    display: flex;
-    flex-direction: column;
-    padding-block: 1rem;
-    padding-inline: 1rem;
+.btn-primary:hover {
+    background-color: black;
+    color: rgb(212, 116, 48);
 }
-
-/* .parrafoContainer {
-    width: 100%;
-    text-align: justify;
-
-}
-
-.titleContainer {
-    text-align: center;
-    padding-block: 1rem;
-} */
-
-
-
-
-
-
 
 /* FOOTER */
 
