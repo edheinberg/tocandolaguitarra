@@ -39,6 +39,14 @@ hr {
     font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
+    transition: 0.4s;
+}
+
+li a:hover {
+    background-color: burlywood;
+    padding: 1rem;
+    border-radius: 25px;
+    color: black;
 }
 
 .navbar__botones {
@@ -113,11 +121,13 @@ iframe {
     padding-top: 1rem;
     background-image: url(../img/FONDO.jpg);
     background-size: cover;
+    /* position: relative; */
 }
 
 .footer h3 {
     font-size: 1.2rem;
     font-weight: 600;
+    color: black;
 }
 
 .footer__redes {
@@ -127,5 +137,7 @@ iframe {
 
 .footer__redes a {
     color: black;
-    padding-inline: 0.5rem;
+    padding-inline: 0.8rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
 }
