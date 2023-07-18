@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Zilla Slab', serif;
 }
 
 /* HEADER */
@@ -106,6 +109,55 @@ iframe {
     border: 2px solid white;
     min-width: 40%;
 }
+
+/* METODOLOGIAS */
+
+.metodologia__tipos {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 25px 0 25px 25px;
+    flex: 1;
+
+}
+
+.metodologia__clasificacion {
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    border-radius: 25px;
+    flex: 1;
+
+}
+
+.meto__foto {
+    max-width: 100%;
+    padding: 1.5rem;
+}
+
+.meto__info {
+    display: flex;
+    flex-direction: column;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+}
+
+/* .parrafoContainer {
+    width: 100%;
+    text-align: justify;
+
+}
+
+.titleContainer {
+    text-align: center;
+    padding-block: 1rem;
+} */
+
+
+
+
+
+
 
 /* FOOTER */
 
