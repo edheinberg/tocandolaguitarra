@@ -138,6 +138,11 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+.card-text {
+    text-align: justify;
 }
 
 .btn-primary {
@@ -150,6 +155,13 @@ iframe {
     color: white;
     border-color: burlywood;
 }
+
+/* CARRUSEL */
+
+.carrusel {
+    /* justify-content: center; */
+}
+
 
 /* FOOTER */
 
