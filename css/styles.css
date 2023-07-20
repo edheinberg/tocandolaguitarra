@@ -243,3 +243,38 @@ iframe {
     padding-bottom: 2rem;
     font-size: 1.5rem;
 }
+
+/* NOSOTROS CSS*/
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 4rem;
+    gap: 2.5rem;
+}
+
+.foto_profe {
+    width: 50%;
+}
+
+.presentacion_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood;
+    text-align: justify;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 50%;
+    height: 10%;
+}
+
+.presentacion_texto h2 {
+    color: rgb(212, 116, 48);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
