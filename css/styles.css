@@ -146,6 +146,11 @@ iframe {
     padding-bottom: 2rem;
 }
 
+.card {
+    box-shadow: 5px 5px 10px 0 black;
+}
+
+
 .card-body {
     display: flex;
     flex-direction: column;
@@ -180,7 +185,7 @@ iframe {
 
 /* CARRUSEL */
 
-.row {
+.carrusel {
     background-image: url(../img/background/00.jpg);
     background-size: cover;
 }
@@ -191,12 +196,12 @@ iframe {
     padding: 0.5rem;
 }
 
-.carrusel_titulo {
+.general_titulo {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.carrusel_titulo h2 {
+.general_titulo h2 {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
@@ -281,6 +286,12 @@ iframe {
 
 .foto img {
     width: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.foto img:hover {
+    transform: scale(1.1);
 }
 
 .galeria {
@@ -294,4 +305,8 @@ iframe {
     grid-template-areas:
         "foto1 foto2 foto3 foto4"
         "foto5 foto6 foto7 foto8";
+}
+
+.testimonios {
+    text-align: center;
 }
