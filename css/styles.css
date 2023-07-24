@@ -20,6 +20,11 @@ hr {
     background-attachment: fixed;
 }
 
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -54,6 +59,7 @@ li a:hover {
 
 .navbar__botones {
     display: flex;
+    align-items: end;
     padding-right: 3rem;
     padding-bottom: 1rem;
     gap: 1rem;
@@ -67,6 +73,7 @@ li a:hover {
     padding: 10px 25px;
     text-align: center;
     transition: 0.4s;
+    height: 40%;
 }
 
 .botones a {
@@ -81,6 +88,16 @@ li a:hover {
     color: white;
     border-color: white;
     font-weight: 500;
+}
+
+.navbar-toggler {
+    background-color: burlywood;
+}
+
+@media (max-width:768px) {
+    .navbar__botones {
+        display: none;
+    }
 }
 
 /* INSTITUCIONAL */

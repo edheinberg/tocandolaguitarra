@@ -13,28 +13,36 @@
 <body>
     
     <section class="encabezado">
-
     <header class="hero">
-        <nav class="navbar">
-        <a href="../index.html"><img class="navbar__logo" src="../img/iconos/Toca sin fondo Blanco.png" id="inicio" alt="TOCA"></a>
-        <ul class="navbar__lista">
+        <div class="navbar_logo">
+            <a href="../index.html"><img class="navbar__logo" src="../img/iconos/Toca sin fondo Blanco.png" id="inicio" alt="TOCA"></a> 
+        </div>
+        <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">         
+        <ul class="navbar__lista navbar-nav me-auto mb-2">
             <li class="navbar__menu"><a href="./canciones.html" target="_self">Canciones</a></li>
             <li class="navbar__menu"><a href="./clases.html" target="_self">Clases</a></li>
             <li class="navbar__menu"><a href="./nosotros.html" target="_self">Nosotros</a></li>
             <li class="navbar__menu"><a href="./comunidad.html" target="_self">Comunidad</a></li>
             <li class="navbar__menu"><a href="./contacto.html" target="_self">Contacto</a></li>
         </ul>
-        <div class="navbar__botones">
-            <button type="button" class="botones"><a href="./comunidad.html">Acceder</a></button>
-            <button type="button" class="botones"><a href="./registrate.html">Registrarse</a></button>
+        </div> 
         </div>
         </nav>
+        <div class="navbar__botones">
+            <button type="button" class="botones"><a href="./pages/comunidad.html">Acceder</a></button>
+            <button type="button" class="botones"><a href="./pages/registrate.html">Registrarse</a></button>
+        </div>   
     </header>
     </section>
 
     <hr>
 
-        <section class="form_contacto">
+    <section class="form_contacto">
       
     <form class="registrate">
         <h2 class="tit_contacto">Registrate</h2>
