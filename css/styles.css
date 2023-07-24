@@ -396,6 +396,11 @@ iframe {
 
 }
 
+.fotos_alumnos {
+    background-image: url(../img/background/00.jpg);
+    background-size: cover;
+}
+
 .foto img {
     width: 100%;
     transition: 0.5s;
@@ -439,11 +444,7 @@ iframe {
     background-color: rgba(222, 184, 135, 0.727);
     border-radius: 25px;
     padding: 1rem;
-}
-
-.fotos_alumnos {
-    background-image: url(../img/background/00.jpg);
-    background-size: cover;
+    width: 100%;
 }
 
 .testimonio {
