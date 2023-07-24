@@ -327,3 +327,270 @@ iframe {
     background-size: cover;
     background-attachment: fixed;
 }
+
+/* CONTACTO CSS*/
+
+.contacto {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.icono_datos {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icono_datos p {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.preguntas_frecuentes_fondo {
+    background-image: url(../img/background/encabezado.jpg);
+    background-size: cover;
+}
+
+.comunidad {
+    background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
+    background-size: cover;
+}
+
+/* CLASES CSS*/
+
+.clases_precios {
+    display: flex;
+}
+
+.suscripciones {
+    width: 110%;
+    align-items: center;
+    text-align: center;
+}
+
+.suscripciones img {
+    width: 20rem;
+    border-style: inherit;
+    margin: 20px 15px 20px 15px;
+    padding: auto;
+}
+
+.suscripciones h2 {
+    font-size: 20px;
+    color: rgb(212, 116, 48);
+}
+
+.suscripciones p {
+    width: 100%;
+    height: 120px;
+    padding: 20px 70px 20px 70px;
+}
+
+.suscripciones h3 {
+    font-style: oblique;
+}
+
+.boton_suscribite {
+    background-color: rgb(212, 116, 48);
+    border-style: groove;
+    border-color: white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 20px;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.boton_suscribite a {
+    text-decoration: none;
+    color: black;
+}
+
+.referi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.referi h2 {
+    background-color: yellow;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.referi img {
+    width: 45px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.ventajas {
+    display: inline-flex;
+    text-align: center;
+    margin: 50px 20px 50px 65px;
+    width: 40%;
+}
+
+.ventajas h3 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.ventajas p {
+    width: 100%;
+    margin: 10px;
+    padding: 15px;
+    background-image: url(../img/FONDO.jpg);
+    background-size: cover;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.wpp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 4rem;
+    border-radius: 55px 55px 55px 20px;
+}
+
+/* CANCIONES CSS*/
+
+.filtros {
+    display: flex;
+    column-gap: 20px;
+    justify-content: end;
+    margin: 20px 20px 20px 20px
+}
+
+.generos {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.padre_canciones h2 {
+    margin-block: 15px;
+}
+
+.canciones {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 15px 15px 15px 15px;
+}
+
+.icono_partitura {
+    width: 15px;
+}
+
+.cuerpo {
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.padre_filtro {
+    margin-block: 18px;
+}
+
+.padre_filtro h2 {
+    font-size: 20px;
+}
+
+.hijos_filtros {
+    margin-block: 20px;
+}
+
+.items_filtros {
+    margin-inline: 15px;
+    font-size: 14px;
+}
+
+.titulo_filtros {
+    font-size: 16px;
+}
+
+/* CSS REGISTRATE.HTML */
+
+.form_contacto {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
+    background-size: cover;
+}
+
+.tit_contacto {
+    color: rgb(212, 116, 48);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.registrate {
+    display: grid;
+    justify-content: left;
+    font-weight: normal;
+    padding: 25px 25px 25px 25px;
+    margin: 25px 25px 25px 25px;
+}
+
+.form_input {
+    width: 90%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-color: burlywood;
+    border-style: double;
+}
+
+.form_input_text {
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-color: burlywood;
+    border-style: double;
+}
+
+.boton_enviar {
+    background-color: rgb(212, 116, 48);
+    border-style: groove;
+    border-color: white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 20px 200px 20px 160px;
+    padding: 10px 10px;
+}
+
+.datos_adicionales {
+    padding: 25px;
+    margin: 25px;
+}
+
+.iconos_contacto {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.icono_datos {
+    display: flex;
+    align-items: center;
+}
+
+.icono_datos p {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}

@@ -25,8 +25,8 @@
             <li class="navbar__menu"><a href="./contacto.html" target="_self">Contacto</a></li>
         </ul>
         <div class="navbar__botones">
-            <button type="button" class="botones"><a href="./pages/comunidad.html">Acceder</a></button>
-            <button type="button" class="botones"><a href="./pages/registrate.html">Registrarse</a></button>
+            <button type="button" class="botones"><a href="./comunidad.html">Acceder</a></button>
+            <button type="button" class="botones"><a href="./registrate.html">Registrarse</a></button>
         </div>
         </nav>
     </header>
@@ -34,7 +34,48 @@
 
     <hr>
 
-        <footer class="footer">
+        <section class="form_contacto">
+      
+    <form class="registrate">
+        <h2 class="tit_contacto">Registrate</h2>
+        <label for="nombre">Nombre y Apellido:
+            <input type="text" id="nombre" required class="form_input">
+        </label>
+        <label for="dni">DNI/CUIT:   
+            <input type="number" required class="form_input">
+        </label>
+        <label for="email">E-mail:
+            <input type="email" required class="form_input">
+        </label>
+        <label for="contraseña">Contraseña:
+            <input type="text" id="contraseña" required class="form_input">
+        </label>
+        <label for="number">Telefono:
+            <input type="number" required class="form_input">
+        </label>
+        <label for="nombre">Domicilio:
+            <input type="text" id="domicilio" required class="form_input">
+        </label>
+        <h4 style="font-weight: normal;">¿Como nos encontraste?</h2>
+        <select name="ubicaste" id="desplegable" class="form_input" required>            
+            <option disabled selected>Opciones</option>
+            <option>Google</option>
+            <option>Facebook</option>
+            <option>Instagram</option>
+            <option>Tik Tok</option>
+            <option>Referido</option>
+        </select>
+        <label for="mensaje">Comentario:
+            <textarea name="comentarios" id="comentario" cols="30" rows="10" required class="form_input_text"></textarea>
+        </label>
+
+        <button type="submit" class="boton_enviar">Enviar</button>
+    </form>
+    </section>
+
+    <hr>
+
+    <footer class="footer">
         <a href="#inicio">
         <img src="../img/iconos/Toca sin fondo Negro.png" alt="toca" class="logopie">
         </a>
