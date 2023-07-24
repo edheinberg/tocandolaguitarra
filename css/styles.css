@@ -278,3 +278,20 @@ iframe {
     text-align: center;
     padding-bottom: 0.5rem;
 }
+
+.foto img {
+    width: 100%;
+}
+
+.galeria {
+    display: grid;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    width: 100%;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "foto1 foto2 foto3 foto4"
+        "foto5 foto6 foto7 foto8";
+}
