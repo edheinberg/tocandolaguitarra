@@ -681,25 +681,3 @@ iframe {
     padding: 25px 25px 25px 25px;
     margin: 25px 25px 25px 25px;
 }
-
-.datos_adicionales {
-    padding: 25px;
-    margin: 25px;
-}
-
-.iconos_contacto {
-    width: 40px;
-    height: 40px;
-    margin-top: 20px;
-}
-
-.icono_datos {
-    display: flex;
-    align-items: center;
-}
-
-.icono_datos p {
-    margin-top: 20px;
-    margin-left: 20px;
-    font-weight: bold;
-}
