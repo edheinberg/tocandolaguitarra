@@ -317,7 +317,6 @@ iframe {
     padding-top: 1rem;
     background-image: url(../img/FONDO.jpg);
     background-size: cover;
-    /* position: relative; */
 }
 
 .footer h3 {
@@ -482,9 +481,25 @@ iframe {
     background-size: cover;
 }
 
+.preguntas_frecuentes {
+    width: 100%;
+    padding: 5rem;
+}
+
 .comunidad {
     background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
     background-size: cover;
+}
+
+@media (max-width:768px) {
+    .contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .preguntas_frecuentes {
+        padding: 2rem;
+    }
 }
 
 /* CLASES CSS*/
@@ -649,8 +664,6 @@ iframe {
 /* CSS REGISTRATE.HTML */
 
 .form_contacto {
-    display: flex;
-    justify-content: center;
     background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
     background-size: cover;
 }
@@ -667,35 +680,6 @@ iframe {
     font-weight: normal;
     padding: 25px 25px 25px 25px;
     margin: 25px 25px 25px 25px;
-}
-
-.form_input {
-    width: 90%;
-    height: 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-color: burlywood;
-    border-style: double;
-}
-
-.form_input_text {
-    width: 90%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-color: burlywood;
-    border-style: double;
-}
-
-.boton_enviar {
-    background-color: rgb(212, 116, 48);
-    border-style: groove;
-    border-color: white;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: normal;
-    margin: 20px 200px 20px 160px;
-    padding: 10px 10px;
 }
 
 .datos_adicionales {
