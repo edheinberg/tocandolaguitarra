@@ -310,3 +310,20 @@ iframe {
 .testimonios {
     text-align: center;
 }
+
+.testimonio_body {
+    background-color: rgba(222, 184, 135, 0.727);
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.fotos_alumnos {
+    background-image: url(../img/background/00.jpg);
+    background-size: cover;
+}
+
+.testimonio {
+    background-image: url(../img/background/359452.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
