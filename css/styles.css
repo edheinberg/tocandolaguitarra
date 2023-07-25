@@ -7,6 +7,11 @@
     font-family: 'Zilla Slab', serif;
 }
 
+*::selection {
+    background-color: black;
+    color: burlywood;
+}
+
 /* HEADER */
 
 hr {
