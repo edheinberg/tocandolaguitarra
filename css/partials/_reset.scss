@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Zilla Slab', serif;
+
+    &::selection {
+        background-color: black;
+        color: burlywood;
+    }
+}
