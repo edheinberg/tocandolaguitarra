@@ -1,0 +1,79 @@
+.metodologia {
+    width: 100%;
+    background-image: url(../img/FONDO.jpg);
+    background-size: cover;
+
+    .meto__titulo {
+        text-align: center;
+        padding-block: 1.2rem;
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: black;
+        }
+    }
+
+    .tarjetas {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        padding-bottom: 2rem;
+
+        .card {
+            box-shadow: 5px 5px 10px 0 black;
+            width: 30%;
+
+            .uno {
+                width: 30, 7%;
+            }
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.5rem;
+                background-color: $mainColor;
+
+                h5 {
+                    font-weight: 700;
+                }
+
+                p {
+                    text-align: justify;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .tarjetas {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding-bottom: 1.5rem;
+    }
+
+    .card {
+        width: 85%;
+    }
+
+    .card-body {
+        padding: 1.2rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    .btn-primary {
+        font-size: 0.8rem;
+    }
+}

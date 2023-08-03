@@ -106,4 +106,132 @@ hr {
   color: white;
   border-color: white;
   font-weight: 500;
+}
+
+.boton_general {
+  background-color: rgb(19, 17, 17);
+  border-color: white;
+  color: rgb(212, 116, 48);
+  font-weight: 500;
+}
+.boton_general:hover {
+  background-color: rgb(104, 94, 94);
+  color: white;
+  border-color: burlywood;
+  font-weight: 500;
+}
+
+.institucional {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex: 1;
+  padding-block: 2rem;
+}
+.institucional .institucional__main {
+  background-color: burlywood;
+  border: 2px solid white;
+  border-radius: 25px;
+  width: 50%;
+  padding: 1.5rem;
+  text-align: justify;
+}
+.institucional .institucional__main h2 {
+  color: rgb(212, 116, 48);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.institucional .institucional__main p .italica {
+  font-style: italic;
+}
+.institucional iframe {
+  border: 2px solid white;
+  max-width: 50%;
+}
+
+@media (max-width: 768px) {
+  .institucional {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .institucional .institucional__main {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 0.8rem;
+  }
+  .institucional .institucional__main h2 {
+    font-size: 1.2rem;
+  }
+  .institucional iframe {
+    max-width: 100%;
+  }
+}
+.metodologia {
+  width: 100%;
+  background-image: url(../img/FONDO.jpg);
+  background-size: cover;
+}
+.metodologia .meto__titulo {
+  text-align: center;
+  padding-block: 1.2rem;
+}
+.metodologia .meto__titulo h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+.metodologia .tarjetas {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.metodologia .tarjetas .card {
+  box-shadow: 5px 5px 10px 0 black;
+  width: 30%;
+}
+.metodologia .tarjetas .card .uno {
+  width: 30, 7%;
+}
+.metodologia .tarjetas .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: burlywood;
+}
+.metodologia .tarjetas .card .card-body h5 {
+  font-weight: 700;
+}
+.metodologia .tarjetas .card .card-body p {
+  text-align: justify;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .tarjetas {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+  .card {
+    width: 85%;
+  }
+  .card-body {
+    padding: 1.2rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .btn-primary {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=estilos.css.map */

@@ -22,3 +22,17 @@
         font-weight: 500;
     }
 }
+
+.boton_general {
+    background-color: rgb(19, 17, 17);
+    border-color: white;
+    color: $secondaryColor;
+    font-weight: 500;
+
+    &:hover {
+        background-color: rgb(104, 94, 94);
+        color: white;
+        border-color: $mainColor;
+        font-weight: 500;
+    }
+}
