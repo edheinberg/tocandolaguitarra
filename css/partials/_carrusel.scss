@@ -1,0 +1,28 @@
+.carrusel {
+    background-image: url(../img/background/00.jpg);
+    background-size: cover;
+
+    .general_titulo {
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $secondaryColor;
+            padding-top: 2rem;
+        }
+    }
+
+    .carrusel_texto {
+        border: 2px solid white;
+        background-color: rgba(0, 0, 0, 0.421);
+        padding: 0.5rem;
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
+}

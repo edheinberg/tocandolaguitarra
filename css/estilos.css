@@ -37,18 +37,18 @@ hr {
   justify-content: space-between;
   align-items: flex-end;
 }
-.encabezado .hero .navbar .collapse .navbar__lista {
+.encabezado .hero .navbar .navbar__lista {
   display: flex;
   gap: 3rem;
   list-style-type: none;
 }
 @media screen and (max-width: 768px) {
-  .encabezado .hero .navbar .collapse .navbar__lista {
+  .encabezado .hero .navbar .navbar__lista {
     padding-top: 1rem;
     gap: 1rem;
   }
 }
-.encabezado .hero .navbar .collapse .navbar__lista .navbar__menu a {
+.encabezado .hero .navbar .navbar__lista .navbar__menu a {
   color: rgb(212, 116, 48);
   font-size: 1.2rem;
   font-weight: 700;
@@ -56,18 +56,22 @@ hr {
   transition: 0.4s;
 }
 @media screen and (max-width: 768px) {
-  .encabezado .hero .navbar .collapse .navbar__lista .navbar__menu a {
+  .encabezado .hero .navbar .navbar__lista .navbar__menu a {
+    color: rgb(212, 116, 48);
+    font-size: 1.2rem;
     font-weight: 500;
+    text-decoration: none;
+    transition: 0.4s;
   }
 }
-.encabezado .hero .navbar .collapse .navbar__lista .navbar__menu a:hover {
+.encabezado .hero .navbar .navbar__lista .navbar__menu a:hover {
   background-color: burlywood;
   padding: 1rem;
   border-radius: 25px;
   color: black;
 }
 @media screen and (max-width: 768px) {
-  .encabezado .hero .navbar .collapse .navbar__lista .navbar__menu a:hover {
+  .encabezado .hero .navbar .navbar__lista .navbar__menu a:hover {
     padding: 0.5rem;
   }
 }
@@ -140,13 +144,14 @@ hr {
   .institucional {
     flex-direction: column;
     gap: 2rem;
+    padding: 1.5rem;
   }
 }
 .institucional .institucional__main {
   background-color: burlywood;
   border: 2px solid white;
   border-radius: 25px;
-  width: 50%;
+  width: 40%;
   padding: 1.5rem;
   text-align: justify;
 }
@@ -251,4 +256,57 @@ hr {
   .metodologia .tarjetas .card .card-body p {
     font-size: 0.8rem;
   }
+}
+
+.carrusel {
+  background-image: url(../img/background/00.jpg);
+  background-size: cover;
+}
+.carrusel .general_titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.carrusel .general_titulo h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(212, 116, 48);
+  padding-top: 2rem;
+}
+.carrusel .carrusel_texto {
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.421);
+  padding: 0.5rem;
+}
+.carrusel .carrusel_texto p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding-top: 1rem;
+  background-image: url(../img/FONDO.jpg);
+  background-size: cover;
+}
+.footer .logopie {
+  width: 70px;
+}
+.footer h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+}
+.footer .footer__redes {
+  display: flex;
+  flex-direction: row;
+}
+.footer .footer__redes a {
+  color: black;
+  padding-inline: 0.8rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=estilos.css.map */
