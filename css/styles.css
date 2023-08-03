@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -10,11 +10,11 @@
 *::selection {
     background-color: black;
     color: burlywood;
-}
+} */
 
 /* HEADER */
 
-hr {
+/* hr {
     color: white;
     margin: 0;
 }
@@ -97,8 +97,8 @@ li a:hover {
 
 .navbar-toggler {
     background-color: burlywood;
-}
-
+} */
+/* 
 @media (max-width:768px) {
     .navbar__lista {
         padding-top: 1rem;
@@ -120,7 +120,7 @@ li a:hover {
     .navbar__botones {
         display: none;
     }
-}
+} */
 
 /* INSTITUCIONAL */
 

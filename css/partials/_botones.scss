@@ -1,0 +1,24 @@
+.botones {
+    background-color: $secondaryColor;
+    border-style: groove;
+    border-color: white;
+    border-radius: 15px;
+    padding: 10px 25px;
+    text-align: center;
+    transition: 0.4s;
+    height: 40%;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    &:hover {
+        background-color: black;
+        color: white;
+        border-color: white;
+        font-weight: 500;
+    }
+}
