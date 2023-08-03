@@ -42,6 +42,12 @@ hr {
   gap: 3rem;
   list-style-type: none;
 }
+@media screen and (max-width: 768px) {
+  .encabezado .hero .navbar .collapse .navbar__lista {
+    padding-top: 1rem;
+    gap: 1rem;
+  }
+}
 .encabezado .hero .navbar .collapse .navbar__lista .navbar__menu a {
   color: rgb(212, 116, 48);
   font-size: 1.2rem;
@@ -49,11 +55,21 @@ hr {
   text-decoration: none;
   transition: 0.4s;
 }
+@media screen and (max-width: 768px) {
+  .encabezado .hero .navbar .collapse .navbar__lista .navbar__menu a {
+    font-weight: 500;
+  }
+}
 .encabezado .hero .navbar .collapse .navbar__lista .navbar__menu a:hover {
   background-color: burlywood;
   padding: 1rem;
   border-radius: 25px;
   color: black;
+}
+@media screen and (max-width: 768px) {
+  .encabezado .hero .navbar .collapse .navbar__lista .navbar__menu a:hover {
+    padding: 0.5rem;
+  }
 }
 .encabezado .hero .navbar .container-fluid .navbar-toggler {
   background-color: burlywood;
@@ -65,26 +81,12 @@ hr {
   padding-bottom: 1rem;
   gap: 1rem;
 }
-
-@media (max-width: 768px) {
-  .navbar__lista {
-    padding-top: 1rem;
-    gap: 1rem;
-  }
-  .navbar__lista .navbar__menu a {
-    color: rgb(212, 116, 48);
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: 0.4s;
-  }
-  .navbar__lista .navbar__menu a:hover {
-    padding: 0.5rem;
-  }
-  .navbar__botones {
+@media screen and (max-width: 768px) {
+  .encabezado .hero .navbar__botones {
     display: none;
   }
 }
+
 .botones {
   background-color: rgb(212, 116, 48);
   border-style: groove;
@@ -114,6 +116,11 @@ hr {
   color: rgb(212, 116, 48);
   font-weight: 500;
 }
+@media screen and (max-width: 768px) {
+  .boton_general {
+    font-size: 0.8rem;
+  }
+}
 .boton_general:hover {
   background-color: rgb(104, 94, 94);
   color: white;
@@ -129,6 +136,12 @@ hr {
   flex: 1;
   padding-block: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .institucional {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 .institucional .institucional__main {
   background-color: burlywood;
   border: 2px solid white;
@@ -137,12 +150,24 @@ hr {
   padding: 1.5rem;
   text-align: justify;
 }
+@media screen and (max-width: 768px) {
+  .institucional .institucional__main {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 0.8rem;
+  }
+}
 .institucional .institucional__main h2 {
   color: rgb(212, 116, 48);
   font-size: 1.6rem;
   font-weight: 600;
   text-align: center;
   padding-bottom: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  .institucional .institucional__main h2 {
+    font-size: 1.2rem;
+  }
 }
 .institucional .institucional__main p .italica {
   font-style: italic;
@@ -151,24 +176,12 @@ hr {
   border: 2px solid white;
   max-width: 50%;
 }
-
-@media (max-width: 768px) {
-  .institucional {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .institucional .institucional__main {
-    width: 100%;
-    padding: 1.2rem;
-    font-size: 0.8rem;
-  }
-  .institucional .institucional__main h2 {
-    font-size: 1.2rem;
-  }
+@media screen and (max-width: 768px) {
   .institucional iframe {
     max-width: 100%;
   }
 }
+
 .metodologia {
   width: 100%;
   background-image: url(../img/FONDO.jpg);
@@ -189,9 +202,22 @@ hr {
   justify-content: center;
   padding-bottom: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .metodologia .tarjetas {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+}
 .metodologia .tarjetas .card {
   box-shadow: 5px 5px 10px 0 black;
   width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .metodologia .tarjetas .card {
+    width: 85%;
+  }
 }
 .metodologia .tarjetas .card .uno {
   width: 30, 7%;
@@ -204,34 +230,25 @@ hr {
   padding: 1.5rem;
   background-color: burlywood;
 }
+@media screen and (max-width: 768px) {
+  .metodologia .tarjetas .card .card-body {
+    padding: 1.2rem;
+  }
+}
 .metodologia .tarjetas .card .card-body h5 {
   font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .metodologia .tarjetas .card .card-body h5 {
+    font-size: 1rem;
+  }
 }
 .metodologia .tarjetas .card .card-body p {
   text-align: justify;
   font-weight: 500;
 }
-
 @media screen and (max-width: 768px) {
-  .tarjetas {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    padding-bottom: 1.5rem;
-  }
-  .card {
-    width: 85%;
-  }
-  .card-body {
-    padding: 1.2rem;
-  }
-  .card-title {
-    font-size: 1rem;
-  }
-  .card-text {
-    font-size: 0.8rem;
-  }
-  .btn-primary {
+  .metodologia .tarjetas .card .card-body p {
     font-size: 0.8rem;
   }
 }/*# sourceMappingURL=estilos.css.map */

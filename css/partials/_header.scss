@@ -29,6 +29,11 @@ hr {
                     gap: 3rem;
                     list-style-type: none;
 
+                    @include mobile {
+                        padding-top: 1rem;
+                        gap: 1rem;
+                    }
+
                     .navbar__menu {
                         a {
                             color: $secondaryColor;
@@ -37,11 +42,19 @@ hr {
                             text-decoration: none;
                             transition: 0.4s;
 
+                            @include mobile {
+                                font-weight: 500;
+                            }
+
                             &:hover {
                                 background-color: burlywood;
                                 padding: 1rem;
                                 border-radius: 25px;
                                 color: black;
+
+                                @include mobile {
+                                    padding: 0.5rem;
+                                }
                             }
                         }
                     }
@@ -62,31 +75,10 @@ hr {
             padding-right: 3rem;
             padding-bottom: 1rem;
             gap: 1rem;
-        }
-    }
-}
 
-@media (max-width:768px) {
-    .navbar__lista {
-        padding-top: 1rem;
-        gap: 1rem;
-
-        .navbar__menu {
-            a {
-                color: $secondaryColor;
-                font-size: 1.2rem;
-                font-weight: 500;
-                text-decoration: none;
-                transition: 0.4s;
-
-                &:hover {
-                    padding: 0.5rem;
-                }
+            @include mobile {
+                display: none;
             }
         }
-    }
-
-    .navbar__botones {
-        display: none;
     }
 }

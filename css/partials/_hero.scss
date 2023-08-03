@@ -6,6 +6,11 @@
     flex: 1;
     padding-block: 2rem;
 
+    @include mobile {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
     .institucional__main {
         background-color: burlywood;
         border: 2px solid white;
@@ -14,12 +19,22 @@
         padding: 1.5rem;
         text-align: justify;
 
+        @include mobile {
+            width: 100%;
+            padding: 1.2rem;
+            font-size: 0.8rem;
+        }
+
         h2 {
             color: rgb(212, 116, 48);
             font-size: 1.6rem;
             font-weight: 600;
             text-align: center;
             padding-bottom: 0.5rem;
+
+            @include mobile {
+                font-size: 1.2rem;
+            }
         }
 
         p {
@@ -32,25 +47,8 @@
     iframe {
         border: 2px solid white;
         max-width: 50%;
-    }
-}
 
-@media (max-width:768px) {
-    .institucional {
-        flex-direction: column;
-        gap: 2rem;
-
-        .institucional__main {
-            width: 100%;
-            padding: 1.2rem;
-            font-size: 0.8rem;
-
-            h2 {
-                font-size: 1.2rem;
-            }
-        }
-
-        iframe {
+        @include mobile {
             max-width: 100%;
         }
     }

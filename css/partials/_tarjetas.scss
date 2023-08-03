@@ -20,9 +20,20 @@
         justify-content: center;
         padding-bottom: 2rem;
 
+        @include mobile {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            padding-bottom: 1.5rem;
+        }
+
         .card {
             box-shadow: 5px 5px 10px 0 black;
             width: 30%;
+
+            @include mobile {
+                width: 85%;
+            }
 
             .uno {
                 width: 30, 7%;
@@ -36,44 +47,27 @@
                 padding: 1.5rem;
                 background-color: $mainColor;
 
+                @include mobile {
+                    padding: 1.2rem;
+                }
+
                 h5 {
                     font-weight: 700;
+
+                    @include mobile {
+                        font-size: 1rem;
+                    }
                 }
 
                 p {
                     text-align: justify;
                     font-weight: 500;
+
+                    @include mobile {
+                        font-size: 0.8rem;
+                    }
                 }
             }
         }
-    }
-}
-
-@media screen and (max-width:768px) {
-    .tarjetas {
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
-        padding-bottom: 1.5rem;
-    }
-
-    .card {
-        width: 85%;
-    }
-
-    .card-body {
-        padding: 1.2rem;
-    }
-
-    .card-title {
-        font-size: 1rem;
-    }
-
-    .card-text {
-        font-size: 0.8rem;
-    }
-
-    .btn-primary {
-        font-size: 0.8rem;
     }
 }

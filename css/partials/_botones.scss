@@ -29,6 +29,10 @@
     color: $secondaryColor;
     font-weight: 500;
 
+    @include mobile {
+        font-size: 0.8rem;
+    }
+
     &:hover {
         background-color: rgb(104, 94, 94);
         color: white;
