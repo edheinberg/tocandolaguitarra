@@ -28,7 +28,7 @@
         }
 
         .card {
-            box-shadow: 5px 5px 10px 0 black;
+            @extend %sombreado;
             width: 30%;
 
             @include mobile {

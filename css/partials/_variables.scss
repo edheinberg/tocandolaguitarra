@@ -4,3 +4,7 @@ $fontZillaSlab: 'Zilla Slab', serif;
 
 $mainColor: burlywood;
 $secondaryColor: rgb(212, 116, 48);
+
+%sombreado {
+    box-shadow: 5px 5px 10px 0 black;
+}

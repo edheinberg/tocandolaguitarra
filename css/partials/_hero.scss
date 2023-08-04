@@ -14,11 +14,11 @@
 
     .institucional__main {
         background-color: $mainColor;
-        border: 2px solid white;
         border-radius: 25px;
         width: 30%;
         padding: 1.5rem;
         text-align: justify;
+        @extend %sombreado;
 
         @include mobile {
             width: 100%;

@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap");
+.testimonio .testimonios .testimonio_body, .presentacion .presentacion_texto, .presentacion .foto_profe, .metodologia .tarjetas .card, .institucional .institucional__main {
+  box-shadow: 5px 5px 10px 0 black;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -189,7 +193,6 @@ hr {
 }
 .institucional .institucional__main {
   background-color: burlywood;
-  border: 2px solid white;
   border-radius: 25px;
   width: 30%;
   padding: 1.5rem;
@@ -256,7 +259,6 @@ hr {
   }
 }
 .metodologia .tarjetas .card {
-  box-shadow: 5px 5px 10px 0 black;
   width: 30%;
 }
 @media screen and (max-width: 768px) {
@@ -340,7 +342,7 @@ hr {
   padding-inline: 0.8rem;
   padding-block: 0.5rem;
   font-size: 1.5rem;
-  border-radius: 25px;
+  border-radius: 1.5rem;
 }
 
 .bi-facebook:hover {
