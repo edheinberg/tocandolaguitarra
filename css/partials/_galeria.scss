@@ -1,0 +1,41 @@
+.fotos_alumnos {
+    background-image: url(../img/background/00.jpg);
+    background-size: cover;
+
+    .galeria {
+        display: grid;
+        padding: 1.5rem;
+        gap: 1.5rem;
+        width: 100%;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "foto1 foto2 foto3 foto4"
+            "foto5 foto6 foto7 foto8";
+
+
+
+        .foto {
+            img {
+                width: 100%;
+                transition: 0.5s;
+                object-fit: cover;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                "foto1 foto2"
+                "foto3 foto4"
+                "foto5 foto6"
+                "foto7 foto8";
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.testimonio {
+    background-image: url(../img/background/359452.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    .testimonios {
+        text-align: center;
+
+        .testimonio_body {
+            background-color: rgba(222, 184, 135, 0.727);
+            border-radius: 25px;
+            padding: 1rem;
+            width: 100%;
+        }
+    }
+}
