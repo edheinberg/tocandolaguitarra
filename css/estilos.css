@@ -79,20 +79,20 @@ hr {
     padding: 0.5rem;
   }
 }
-.encabezado .hero .navbar .navbar__lista .menu_item1 {
-  animation-delay: 0.5s;
+.encabezado .hero .navbar .navbar__lista .navbar__menu:nth-child(1) {
+  animation-delay: 0.3s;
 }
-.encabezado .hero .navbar .navbar__lista .menu_item2 {
-  animation-delay: 1s;
+.encabezado .hero .navbar .navbar__lista .navbar__menu:nth-child(2) {
+  animation-delay: 0.6s;
 }
-.encabezado .hero .navbar .navbar__lista .menu_item3 {
+.encabezado .hero .navbar .navbar__lista .navbar__menu:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.encabezado .hero .navbar .navbar__lista .navbar__menu:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.encabezado .hero .navbar .navbar__lista .navbar__menu:nth-child(5) {
   animation-delay: 1.5s;
-}
-.encabezado .hero .navbar .navbar__lista .menu_item4 {
-  animation-delay: 2s;
-}
-.encabezado .hero .navbar .navbar__lista .menu_item5 {
-  animation-delay: 2.5s;
 }
 .encabezado .hero .navbar .container-fluid .navbar-toggler {
   background-color: burlywood;
@@ -191,7 +191,7 @@ hr {
   background-color: burlywood;
   border: 2px solid white;
   border-radius: 25px;
-  width: 40%;
+  width: 30%;
   padding: 1.5rem;
   text-align: justify;
 }
@@ -332,12 +332,35 @@ hr {
 .footer .footer__redes {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  padding-bottom: 2rem;
 }
 .footer .footer__redes a {
   color: black;
   padding-inline: 0.8rem;
-  padding-bottom: 2rem;
+  padding-block: 0.5rem;
   font-size: 1.5rem;
+  border-radius: 25px;
+}
+
+.bi-facebook:hover {
+  background-color: #4040e4;
+  transition: 0.5s;
+}
+
+.bi-instagram:hover {
+  background-color: #ef6d82;
+  transition: 0.5s;
+}
+
+.bi-youtube:hover {
+  background-color: #f01c1c;
+  transition: 0.5s;
+}
+
+.bi-tiktok:hover {
+  background-color: white;
+  transition: 0.5s;
 }
 
 .presentacion {

@@ -20,12 +20,30 @@
     .footer__redes {
         display: flex;
         flex-direction: row;
+        gap: 1rem;
+        padding-bottom: 2rem;
 
         a {
             color: black;
             padding-inline: 0.8rem;
-            padding-bottom: 2rem;
+            padding-block: 0.5rem;
             font-size: 1.5rem;
+            border-radius: 25px;
         }
+    }
+}
+
+$redes: (
+    facebook: #4040e4,
+    instagram: #ef6d82,
+    youtube: #f01c1c,
+    tiktok: white
+);
+
+@each $redsocial,
+$colorredes in $redes {
+    .bi-#{$redsocial}:hover {
+        background-color: $colorredes;
+        transition: 0.5s;
     }
 }

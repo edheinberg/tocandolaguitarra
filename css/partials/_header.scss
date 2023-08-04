@@ -66,8 +66,8 @@ hr {
                 }
 
                 @for $item from 1 through 5 {
-                    .menu_item#{$item} {
-                        animation-delay: $item*0.5s;
+                    .navbar__menu:nth-child(#{$item}) {
+                        animation-delay: $item*0.3s;
                     }
                 }
             }
