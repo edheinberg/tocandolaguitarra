@@ -49,6 +49,9 @@ hr {
     gap: 1rem;
   }
 }
+.encabezado .hero .navbar .navbar__lista .navbar__menu {
+  animation: scale-in-hor-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
 .encabezado .hero .navbar .navbar__lista .navbar__menu a {
   color: rgb(212, 116, 48);
   font-size: 1.2rem;
@@ -76,6 +79,21 @@ hr {
     padding: 0.5rem;
   }
 }
+.encabezado .hero .navbar .navbar__lista .menu_item1 {
+  animation-delay: 0.5s;
+}
+.encabezado .hero .navbar .navbar__lista .menu_item2 {
+  animation-delay: 1s;
+}
+.encabezado .hero .navbar .navbar__lista .menu_item3 {
+  animation-delay: 1.5s;
+}
+.encabezado .hero .navbar .navbar__lista .menu_item4 {
+  animation-delay: 2s;
+}
+.encabezado .hero .navbar .navbar__lista .menu_item5 {
+  animation-delay: 2.5s;
+}
 .encabezado .hero .navbar .container-fluid .navbar-toggler {
   background-color: burlywood;
 }
@@ -91,7 +109,16 @@ hr {
     display: none;
   }
 }
-
+@keyframes scale-in-hor-center {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
 .botones {
   background-color: rgb(212, 116, 48);
   border-style: groove;
