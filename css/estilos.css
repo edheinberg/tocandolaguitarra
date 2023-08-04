@@ -455,4 +455,15 @@ hr {
 .comunidad {
   background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
   background-size: cover;
+}
+.comunidad label {
+  font-weight: 500;
+}
+
+.form_contacto {
+  background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
+  background-size: cover;
+}
+.form_contacto label {
+  font-weight: 500;
 }/*# sourceMappingURL=estilos.css.map */
