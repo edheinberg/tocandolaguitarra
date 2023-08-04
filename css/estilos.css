@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
@@ -413,4 +414,45 @@ hr {
   border-radius: 25px;
   padding: 1rem;
   width: 100%;
+}
+
+.contacto {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contacto .icono_datos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contacto .icono_datos p {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .contacto {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.preguntas_frecuentes_fondo {
+  background-image: url(../img/background/encabezado.jpg);
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .preguntas_frecuentes_fondo .preguntas_frecuentes {
+    padding: 2rem;
+  }
+}
+
+.comunidad {
+  background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
+  background-size: cover;
 }/*# sourceMappingURL=estilos.css.map */

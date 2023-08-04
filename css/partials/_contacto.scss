@@ -1,0 +1,43 @@
+.contacto {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
+    background-size: cover;
+    background-attachment: fixed;
+
+    .icono_datos {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        p {
+            margin-top: 1rem;
+            margin-left: 1rem;
+            font-weight: bold;
+        }
+    }
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.preguntas_frecuentes_fondo {
+    background-image: url(../img/background/encabezado.jpg);
+    background-size: cover;
+
+    @include mobile {
+        .preguntas_frecuentes {
+            padding: 2rem;
+        }
+    }
+
+}
+
+.comunidad {
+    background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
+    background-size: cover;
+}
