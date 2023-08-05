@@ -536,6 +536,15 @@ hr {
   align-items: center;
   padding: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .clases_precios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+}
 .clases_precios .suscripciones {
   display: flex;
   flex-direction: column;
@@ -545,9 +554,15 @@ hr {
   text-align: center;
   padding: 1.5rem;
 }
+@media screen and (max-width: 768px) {
+  .clases_precios .suscripciones {
+    padding: 0.5rem;
+  }
+}
 .clases_precios .suscripciones img {
   width: 90%;
   padding: 1rem;
+  border-radius: 1rem;
 }
 .clases_precios .suscripciones .cuerpo_clase {
   display: flex;
@@ -559,8 +574,19 @@ hr {
   background-color: burlywood;
   border-radius: 1.5rem;
 }
+@media screen and (max-width: 768px) {
+  .clases_precios .suscripciones .cuerpo_clase {
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+}
 .clases_precios .suscripciones .cuerpo_clase h3 {
   font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .clases_precios .suscripciones .cuerpo_clase h3 {
+    font-size: 1.2rem;
+  }
 }
 .clases_precios .suscripciones .cuerpo_clase h5 {
   font-weight: 700;
@@ -582,20 +608,20 @@ hr {
 
 .referi {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
-
 .referi h2 {
   background-color: yellow;
-  padding: 15px 15px 15px 15px;
-  margin-bottom: 20px;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-style: groove;
 }
-
-.referi img {
-  width: 45px;
-  margin-left: 10px;
-  margin-bottom: 20px;
+.referi a {
+  font-size: 2.5rem;
+  color: black;
 }
 
 .ventajas {
