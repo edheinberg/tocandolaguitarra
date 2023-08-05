@@ -1,8 +1,6 @@
 .contacto {
-    display: flex;
+    @include flex(row, center, center);
     gap: 1rem;
-    justify-content: center;
-    align-items: center;
     background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
     background-size: cover;
     background-attachment: fixed;

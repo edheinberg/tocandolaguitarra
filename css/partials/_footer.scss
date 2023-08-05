@@ -1,9 +1,7 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, center, center);
     gap: 0.6rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     background-image: url(../img/FONDO.jpg);
     background-size: cover;
 

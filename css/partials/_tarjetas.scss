@@ -40,10 +40,7 @@
             }
 
             .card-body {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
+                @include flex(column, space-between, center);
                 padding: 1.5rem;
                 background-color: $mainColor;
 

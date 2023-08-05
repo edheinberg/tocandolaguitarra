@@ -1,6 +1,5 @@
 .presentacion {
-    display: flex;
-    align-items: center;
+    @include flex(row, center, center);
     width: 100%;
     padding: 4rem;
     gap: 2.5rem;
@@ -13,7 +12,8 @@
     }
 
     .foto_profe {
-        width: 50%;
+        width: 45%;
+        border-radius: 1.5rem;
         @extend %sombreado;
 
         @include mobile {
@@ -22,15 +22,12 @@
     }
 
     .presentacion_texto {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(column, space-between, center);
         background-color: $mainColor;
         text-align: justify;
         padding: 2rem;
         border-radius: 20px;
-        width: 50%;
+        width: 40%;
         height: 10%;
         @extend %sombreado;
 

@@ -1,7 +1,5 @@
 .institucional {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
     gap: 5rem;
     flex: 1;
     padding-block: 2rem;

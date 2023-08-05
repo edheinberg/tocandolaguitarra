@@ -8,3 +8,10 @@ $secondaryColor: rgb(212, 116, 48);
 %sombreado {
     box-shadow: 5px 5px 10px 0 black;
 }
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -18,9 +18,7 @@ hr {
         }
 
         .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
+            @include flex(row, space-between, flex-end);
 
             .navbar__lista {
                 display: flex;
@@ -67,7 +65,7 @@ hr {
 
                 @for $item from 1 through 5 {
                     .navbar__menu:nth-child(#{$item}) {
-                        animation-delay: $item*0.3s;
+                        animation-delay: $item*0.2s;
                     }
                 }
             }
@@ -81,8 +79,7 @@ hr {
         }
 
         .navbar__botones {
-            display: flex;
-            align-items: end;
+            @include flex(row, center, end);
             padding-right: 3rem;
             padding-bottom: 1rem;
             gap: 1rem;
