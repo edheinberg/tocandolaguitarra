@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap");
-.testimonio .testimonios .testimonio_body, .presentacion .presentacion_texto, .presentacion .foto_profe, .metodologia .tarjetas .card, .institucional .institucional__main {
+.clases_precios .suscripciones .cuerpo_clase, .testimonio .testimonios .testimonio_body, .presentacion .presentacion_texto, .presentacion .foto_profe, .metodologia .tarjetas .card, .institucional .institucional__main {
   box-shadow: 5px 5px 10px 0 black;
 }
 
@@ -527,4 +527,104 @@ hr {
 }
 .form_contacto label {
   font-weight: 500;
+}
+
+.clases_precios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.clases_precios .suscripciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+}
+.clases_precios .suscripciones img {
+  width: 90%;
+  padding: 1rem;
+}
+.clases_precios .suscripciones .cuerpo_clase {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: burlywood;
+  border-radius: 1.5rem;
+}
+.clases_precios .suscripciones .cuerpo_clase h3 {
+  font-size: 1.5rem;
+}
+.clases_precios .suscripciones .cuerpo_clase h5 {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .clases_precios .suscripciones .cuerpo_clase h5 {
+    font-size: 1rem;
+  }
+}
+.clases_precios .suscripciones .cuerpo_clase p {
+  text-align: justify;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .clases_precios .suscripciones .cuerpo_clase p {
+    font-size: 0.8rem;
+  }
+}
+
+.referi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.referi h2 {
+  background-color: yellow;
+  padding: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+}
+
+.referi img {
+  width: 45px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.ventajas {
+  display: inline-flex;
+  text-align: center;
+  margin: 50px 20px 50px 65px;
+  width: 40%;
+}
+
+.ventajas h3 {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.ventajas p {
+  width: 100%;
+  margin: 10px;
+  padding: 15px;
+  background-image: url(../img/FONDO.jpg);
+  background-size: cover;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.wpp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 4rem;
+  border-radius: 55px 55px 55px 20px;
 }/*# sourceMappingURL=estilos.css.map */
