@@ -612,6 +612,10 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  animation: shake-bottom 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+}
+.referi:hover {
+  animation: none;
 }
 .referi h2 {
   background-color: yellow;
@@ -660,7 +664,7 @@ hr {
 }
 .sec_ventajas .ventajas_uno .ventajas h3,
 .sec_ventajas .ventajas_dos .ventajas h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 .sec_ventajas .ventajas_uno .ventajas p,
@@ -670,6 +674,7 @@ hr {
   background-size: cover;
   text-align: center;
   border-radius: 1.5rem;
+  font-weight: 500;
 }
 
 .wpp {
@@ -678,4 +683,25 @@ hr {
   right: 10px;
   width: 4rem;
   border-radius: 55px 55px 55px 20px;
+}
+@keyframes shake-bottom {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-4deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
 }/*# sourceMappingURL=estilos.css.map */
