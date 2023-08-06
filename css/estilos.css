@@ -624,27 +624,52 @@ hr {
   color: black;
 }
 
-.ventajas {
-  display: inline-flex;
-  text-align: center;
-  margin: 50px 20px 50px 65px;
-  width: 40%;
+.sec_ventajas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
 }
-
-.ventajas h3 {
-  margin-top: 20px;
-  font-size: 1.3rem;
+@media screen and (max-width: 768px) {
+  .sec_ventajas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+}
+.sec_ventajas .ventajas_uno,
+.sec_ventajas .ventajas_dos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.sec_ventajas .ventajas_uno .ventajas,
+.sec_ventajas .ventajas_dos .ventajas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  gap: 1rem;
+}
+.sec_ventajas .ventajas_uno .ventajas h3,
+.sec_ventajas .ventajas_dos .ventajas h3 {
+  font-size: 1.2rem;
   font-weight: 500;
 }
-
-.ventajas p {
-  width: 100%;
-  margin: 10px;
-  padding: 15px;
+.sec_ventajas .ventajas_uno .ventajas p,
+.sec_ventajas .ventajas_dos .ventajas p {
+  padding: 1rem;
   background-image: url(../img/FONDO.jpg);
   background-size: cover;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 1.5rem;
 }
 
 .wpp {

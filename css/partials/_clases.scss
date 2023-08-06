@@ -81,27 +81,40 @@
     }
 }
 
-.ventajas {
-    display: inline-flex;
-    text-align: center;
-    margin: 50px 20px 50px 65px;
-    width: 40%;
-}
+.sec_ventajas {
+    @include flex(row, center, center);
+    padding: 1.5rem;
 
-.ventajas h3 {
-    margin-top: 20px;
-    font-size: 1.3rem;
-    font-weight: 500;
-}
+    @include mobile {
+        @include flex(column, center, center);
+        padding: 0.5rem
+    }
 
-.ventajas p {
-    width: 100%;
-    margin: 10px;
-    padding: 15px;
-    background-image: url(../img/FONDO.jpg);
-    background-size: cover;
-    text-align: center;
-    border-radius: 20px;
+    .ventajas_uno,
+    .ventajas_dos {
+        @include flex(column, center, center);
+        gap: 1rem;
+
+        .ventajas {
+            @include flex(row, center, center);
+            text-align: center;
+            width: 80%;
+            gap: 1rem;
+
+            h3 {
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            p {
+                padding: 1rem;
+                background-image: url(../img/FONDO.jpg);
+                background-size: cover;
+                text-align: center;
+                border-radius: 1.5rem;
+            }
+        }
+    }
 }
 
 .wpp {
