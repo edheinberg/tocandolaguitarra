@@ -67,6 +67,7 @@
 .referi {
     @include flex(row, center, center);
     gap: 1rem;
+    padding: 1rem;
 
     -webkit-animation: shake-bottom 3s cubic-bezier(.455, .03, .515, .955) infinite both;
     animation: shake-bottom 3s cubic-bezier(.455, .03, .515, .955) infinite both;
