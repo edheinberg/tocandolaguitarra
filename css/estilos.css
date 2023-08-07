@@ -448,6 +448,9 @@ hr {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "foto1 foto2 foto3 foto4" "foto5 foto6 foto7 foto8";
 }
+.fotos_alumnos .galeria .foto {
+  animation: flip-in-ver-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 .fotos_alumnos .galeria .foto img {
   width: 100%;
   transition: 0.5s;
@@ -455,7 +458,32 @@ hr {
      object-fit: cover;
 }
 .fotos_alumnos .galeria .foto img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.fotos_alumnos .galeria .foto1 {
+  animation-delay: 0.3s;
+}
+.fotos_alumnos .galeria .foto2 {
+  animation-delay: 0.6s;
+}
+.fotos_alumnos .galeria .foto3 {
+  animation-delay: 0.9s;
+}
+.fotos_alumnos .galeria .foto4 {
+  animation-delay: 1.2s;
+}
+.fotos_alumnos .galeria .foto5 {
+  animation-delay: 1.5s;
+}
+.fotos_alumnos .galeria .foto6 {
+  animation-delay: 1.8s;
+}
+.fotos_alumnos .galeria .foto7 {
+  animation-delay: 2.1s;
+}
+.fotos_alumnos .galeria .foto8 {
+  animation-delay: 2.4s;
 }
 @media screen and (max-width: 768px) {
   .fotos_alumnos .galeria {
@@ -464,7 +492,16 @@ hr {
     grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8";
   }
 }
-
+@keyframes flip-in-ver-right {
+  0% {
+    transform: rotateY(-80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
 .testimonio {
   background-image: url(../img/background/359452.jpg);
   background-size: cover;

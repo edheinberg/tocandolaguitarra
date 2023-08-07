@@ -14,17 +14,26 @@
             "foto1 foto2 foto3 foto4"
             "foto5 foto6 foto7 foto8";
 
-
-
         .foto {
+
+            -webkit-animation: flip-in-ver-right .8s cubic-bezier(.25, .46, .45, .94) both;
+            animation: flip-in-ver-right .8s cubic-bezier(.25, .46, .45, .94) both;
+
             img {
                 width: 100%;
                 transition: 0.5s;
                 object-fit: cover;
 
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.05);
+                    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
                 }
+            }
+        }
+
+        @for $foto from 1 through 8 {
+            .foto#{$foto} {
+                animation-delay: $foto*0.3s;
             }
         }
 
@@ -37,5 +46,33 @@
                 "foto5 foto6"
                 "foto7 foto8";
         }
+    }
+}
+
+@-webkit-keyframes flip-in-ver-right {
+    0% {
+        -webkit-transform: rotateY(-80deg);
+        transform: rotateY(-80deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes flip-in-ver-right {
+    0% {
+        -webkit-transform: rotateY(-80deg);
+        transform: rotateY(-80deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+        opacity: 1
     }
 }
