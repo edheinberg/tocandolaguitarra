@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
@@ -47,7 +48,7 @@
 
     <section class="hero_clases">
     <div class="clases_precios">
-        <div class="suscripciones">
+        <div class="suscripciones" data-aos="zoom-in-right" data-aos-duration="1200">
             <img src="../img/clases/prueba.jpg" alt="prueba">
             <div class="cuerpo_clase">
                 <h3>Clases de PRUEBA</h3>
@@ -56,7 +57,7 @@
                 <button type="submit"><a class="btn btn-primary boton_general" href="../pages/registrate.   html">SUSCRIBITE</a></button>
             </div>
         </div>
-        <div class="suscripciones">
+        <div class="suscripciones" data-aos="zoom-out" data-aos-duration="1200">
             <img src="../img/clases/virtual.jpg" alt="virtual">
             <div class="cuerpo_clase">
                 <h3>Clases 100% VIRTUALES</h3>
@@ -65,7 +66,7 @@
                 <button type="submit"><a class="btn btn-primary boton_general" href="../pages/registrate.html">SUSCRIBITE</a></button>
             </div>
         </div>
-        <div class="suscripciones">
+        <div class="suscripciones" data-aos="zoom-in-left" data-aos-duration="1200">
             <img src="../img/clases/4clases.jpg" alt="presencial">
             <div class="cuerpo_clase">
                 <h3>Clases PRESENCIALES</h3>
@@ -89,7 +90,7 @@
         <div class="general_titulo">
         <h2>VENTAJAS DE SUSCRIBIRSE</h2>
         </div>
-        <section class="sec_ventajas">
+        <section class="sec_ventajas" data-aos="zoom-in-down" data-aos-duration="1000">
         <div class="ventajas_uno">
         <div class="ventajas">
             <h3>ACCESO ILIMITADO</h3>
@@ -130,5 +131,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>   
 </body>
 </html>

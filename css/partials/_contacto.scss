@@ -4,6 +4,74 @@
     background-color: #FAD961;
     background-image: linear-gradient(90deg, #FAD961 0%, #ff9149 100%);
 
+    .container {
+        -webkit-animation: roll-in-left .7s ease-out both;
+        animation: roll-in-left .7s ease-out both;
+
+        @-webkit-keyframes roll-in-left {
+            0% {
+                -webkit-transform: translateX(-800px) rotate(-540deg);
+                transform: translateX(-800px) rotate(-540deg);
+                opacity: 0
+            }
+
+            100% {
+                -webkit-transform: translateX(0) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
+                opacity: 1
+            }
+        }
+
+        @keyframes roll-in-left {
+            0% {
+                -webkit-transform: translateX(-800px) rotate(-540deg);
+                transform: translateX(-800px) rotate(-540deg);
+                opacity: 0
+            }
+
+            100% {
+                -webkit-transform: translateX(0) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
+                opacity: 1
+            }
+        }
+    }
+
+    .datos_adicionales {
+
+        -webkit-animation: roll-in-right .7s ease-out both;
+
+        animation: roll-in-right .7s ease-out both;
+
+        @-webkit-keyframes roll-in-right {
+            0% {
+                -webkit-transform: translateX(800px) rotate(540deg);
+                transform: translateX(800px) rotate(540deg);
+                opacity: 0
+            }
+
+            100% {
+                -webkit-transform: translateX(0) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
+                opacity: 1
+            }
+        }
+
+        @keyframes roll-in-right {
+            0% {
+                -webkit-transform: translateX(800px) rotate(540deg);
+                transform: translateX(800px) rotate(540deg);
+                opacity: 0
+            }
+
+            100% {
+                -webkit-transform: translateX(0) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
+                opacity: 1
+            }
+        }
+    }
+
     .icono_datos {
         display: flex;
         align-items: center;

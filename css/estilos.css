@@ -55,7 +55,7 @@ hr {
   }
 }
 .encabezado .hero .navbar .navbar__lista .navbar__menu {
-  animation: scale-in-hor-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-in-hor-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .encabezado .hero .navbar .navbar__lista .navbar__menu a {
   color: rgb(212, 116, 48);
@@ -525,6 +525,32 @@ hr {
   gap: 1rem;
   background-color: #FAD961;
   background-image: linear-gradient(90deg, #FAD961 0%, #ff9149 100%);
+}
+.contacto .container {
+  animation: roll-in-left 0.7s ease-out both;
+}
+@keyframes roll-in-left {
+  0% {
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+.contacto .datos_adicionales {
+  animation: roll-in-right 0.7s ease-out both;
+}
+@keyframes roll-in-right {
+  0% {
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
 }
 .contacto .icono_datos {
   display: flex;
