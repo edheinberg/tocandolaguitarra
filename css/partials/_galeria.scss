@@ -1,10 +1,10 @@
 .fotos_alumnos {
-    background-image: url(../img/background/00.jpg);
-    background-size: cover;
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #ff9149 100%);
 
     .galeria {
         display: grid;
-        padding: 1.5rem;
+        padding: 2rem;
         gap: 1.5rem;
         width: 100%;
 

@@ -2,7 +2,7 @@
     @include flex(row, center, center);
     gap: 5rem;
     flex: 1;
-    padding-block: 2rem;
+    padding-block: 7rem;
 
     @include mobile {
         flex-direction: column;
