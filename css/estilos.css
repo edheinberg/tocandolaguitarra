@@ -612,7 +612,7 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   animation: shake-bottom 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
 }
 .referi:hover {
@@ -634,7 +634,7 @@ hr {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 3rem;
 }
 @media screen and (max-width: 768px) {
   .sec_ventajas {
@@ -667,6 +667,7 @@ hr {
 .sec_ventajas .ventajas_dos .ventajas h3 {
   font-size: 1.3rem;
   font-weight: 500;
+  width: 40%;
 }
 .sec_ventajas .ventajas_uno .ventajas p,
 .sec_ventajas .ventajas_dos .ventajas p {
@@ -676,14 +677,14 @@ hr {
   text-align: center;
   border-radius: 1.5rem;
   font-weight: 500;
+  width: 100%;
 }
 
 .wpp {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 4rem;
-  border-radius: 55px 55px 55px 20px;
+  width: 80px;
+  bottom: 2rem;
+  right: 2rem;
 }
 @keyframes shake-bottom {
   0%, 100% {
@@ -705,4 +706,61 @@ hr {
   90% {
     transform: rotate(2deg);
   }
+}
+.filtros {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: end;
+  margin: 20px 20px 20px 20px;
+}
+
+.generos {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.padre_canciones h2 {
+  margin-block: 15px;
+}
+
+.canciones {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  padding: 15px 15px 15px 15px;
+}
+
+.icono_partitura {
+  width: 15px;
+}
+
+.cuerpo {
+  display: flex;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.padre_filtro {
+  margin-block: 18px;
+}
+
+.padre_filtro h2 {
+  font-size: 20px;
+}
+
+.hijos_filtros {
+  margin-block: 20px;
+}
+
+.items_filtros {
+  margin-inline: 15px;
+  font-size: 14px;
+}
+
+.titulo_filtros {
+  font-size: 16px;
 }/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,55 @@
+.filtros {
+    display: flex;
+    column-gap: 20px;
+    justify-content: end;
+    margin: 20px 20px 20px 20px
+}
+
+.generos {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.padre_canciones h2 {
+    margin-block: 15px;
+}
+
+.canciones {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 15px 15px 15px 15px;
+}
+
+.icono_partitura {
+    width: 15px;
+}
+
+.cuerpo {
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.padre_filtro {
+    margin-block: 18px;
+}
+
+.padre_filtro h2 {
+    font-size: 20px;
+}
+
+.hijos_filtros {
+    margin-block: 20px;
+}
+
+.items_filtros {
+    margin-inline: 15px;
+    font-size: 14px;
+}
+
+.titulo_filtros {
+    font-size: 16px;
+}

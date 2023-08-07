@@ -67,7 +67,7 @@
 .referi {
     @include flex(row, center, center);
     gap: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 
     -webkit-animation: shake-bottom 3s cubic-bezier(.455, .03, .515, .955) infinite both;
     animation: shake-bottom 3s cubic-bezier(.455, .03, .515, .955) infinite both;
@@ -92,7 +92,7 @@
 
 .sec_ventajas {
     @include flex(row, center, center);
-    padding: 1.5rem;
+    padding: 3rem;
 
     @include mobile {
         @include flex(column, center, center);
@@ -113,6 +113,7 @@
             h3 {
                 font-size: 1.3rem;
                 font-weight: 500;
+                width: 40%;
             }
 
             p {
@@ -122,6 +123,7 @@
                 text-align: center;
                 border-radius: 1.5rem;
                 font-weight: 500;
+                width: 100%;
             }
         }
     }
@@ -129,10 +131,9 @@
 
 .wpp {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 4rem;
-    border-radius: 55px 55px 55px 20px;
+    width: 80px;
+    bottom: 2rem;
+    right: 2rem;
 }
 
 @-webkit-keyframes shake-bottom {
