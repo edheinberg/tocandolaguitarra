@@ -1,9 +1,8 @@
 .contacto {
     @include flex(row, center, center);
     gap: 1rem;
-    background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #ff9149 100%);
 
     .icono_datos {
         display: flex;
@@ -26,6 +25,7 @@
 .preguntas_frecuentes_fondo {
     background-image: url(../img/background/encabezado.jpg);
     background-size: cover;
+    background-attachment: fixed;
 
     @include mobile {
         .preguntas_frecuentes {

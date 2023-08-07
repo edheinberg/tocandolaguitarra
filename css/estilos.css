@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap");
-.clases_precios .suscripciones .cuerpo_clase, .testimonio .testimonios .testimonio_body, .presentacion .presentacion_texto, .presentacion .foto_profe, .metodologia .tarjetas .card, .institucional .institucional__main {
+.hero_clases .clases_precios .suscripciones .cuerpo_clase, .testimonio .testimonios .testimonio_body, .presentacion .presentacion_texto, .presentacion .foto_profe, .metodologia .tarjetas .card, .institucional .institucional__main {
   box-shadow: 5px 5px 10px 0 black;
 }
 
@@ -177,6 +177,9 @@ hr {
   font-weight: 700;
   color: rgb(212, 116, 48);
   padding-top: 2rem;
+}
+.general_titulo .gt_contacto {
+  color: black;
 }
 
 .institucional {
@@ -482,9 +485,8 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-image: url(../img/background/7528455-banners-de-música-de-horisontal.webp);
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #FAD961;
+  background-image: linear-gradient(90deg, #FAD961 0%, #ff9149 100%);
 }
 .contacto .icono_datos {
   display: flex;
@@ -506,6 +508,7 @@ hr {
 .preguntas_frecuentes_fondo {
   background-image: url(../img/background/encabezado.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 @media screen and (max-width: 768px) {
   .preguntas_frecuentes_fondo .preguntas_frecuentes {
@@ -529,7 +532,15 @@ hr {
   font-weight: 500;
 }
 
-.clases_precios {
+.hero_clases {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAD961;
+  background-image: linear-gradient(90deg, #FAD961 0%, #ff9149 100%);
+}
+.hero_clases .clases_precios {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -537,7 +548,7 @@ hr {
   padding: 2rem;
 }
 @media screen and (max-width: 768px) {
-  .clases_precios {
+  .hero_clases .clases_precios {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -545,7 +556,7 @@ hr {
     padding: 1.5rem;
   }
 }
-.clases_precios .suscripciones {
+.hero_clases .clases_precios .suscripciones {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -555,16 +566,16 @@ hr {
   padding: 1.5rem;
 }
 @media screen and (max-width: 768px) {
-  .clases_precios .suscripciones {
+  .hero_clases .clases_precios .suscripciones {
     padding: 0.5rem;
   }
 }
-.clases_precios .suscripciones img {
+.hero_clases .clases_precios .suscripciones img {
   width: 90%;
   padding: 1rem;
   border-radius: 1rem;
 }
-.clases_precios .suscripciones .cuerpo_clase {
+.hero_clases .clases_precios .suscripciones .cuerpo_clase {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -575,38 +586,37 @@ hr {
   border-radius: 1.5rem;
 }
 @media screen and (max-width: 768px) {
-  .clases_precios .suscripciones .cuerpo_clase {
+  .hero_clases .clases_precios .suscripciones .cuerpo_clase {
     gap: 0.5rem;
     padding: 1rem;
   }
 }
-.clases_precios .suscripciones .cuerpo_clase h3 {
+.hero_clases .clases_precios .suscripciones .cuerpo_clase h3 {
   font-size: 1.5rem;
 }
 @media screen and (max-width: 768px) {
-  .clases_precios .suscripciones .cuerpo_clase h3 {
+  .hero_clases .clases_precios .suscripciones .cuerpo_clase h3 {
     font-size: 1.2rem;
   }
 }
-.clases_precios .suscripciones .cuerpo_clase h5 {
+.hero_clases .clases_precios .suscripciones .cuerpo_clase h5 {
   font-weight: 700;
 }
 @media screen and (max-width: 768px) {
-  .clases_precios .suscripciones .cuerpo_clase h5 {
+  .hero_clases .clases_precios .suscripciones .cuerpo_clase h5 {
     font-size: 1rem;
   }
 }
-.clases_precios .suscripciones .cuerpo_clase p {
+.hero_clases .clases_precios .suscripciones .cuerpo_clase p {
   text-align: justify;
   font-weight: 500;
 }
 @media screen and (max-width: 768px) {
-  .clases_precios .suscripciones .cuerpo_clase p {
+  .hero_clases .clases_precios .suscripciones .cuerpo_clase p {
     font-size: 0.8rem;
   }
 }
-
-.referi {
+.hero_clases .referi {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -615,16 +625,16 @@ hr {
   padding: 2rem;
   animation: shake-bottom 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
 }
-.referi:hover {
+.hero_clases .referi:hover {
   animation: none;
 }
-.referi h2 {
+.hero_clases .referi h2 {
   background-color: yellow;
   padding: 1rem;
   border-radius: 1rem;
   border-style: groove;
 }
-.referi a {
+.hero_clases .referi a {
   font-size: 2.5rem;
   color: black;
 }
@@ -665,8 +675,9 @@ hr {
 }
 .sec_ventajas .ventajas_uno .ventajas h3,
 .sec_ventajas .ventajas_dos .ventajas h3 {
+  color: rgb(212, 116, 48);
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 700;
   width: 40%;
 }
 .sec_ventajas .ventajas_uno .ventajas p,
