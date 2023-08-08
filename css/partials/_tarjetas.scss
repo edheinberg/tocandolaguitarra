@@ -3,22 +3,11 @@
     background-image: url(../img/FONDO.jpg);
     background-size: cover;
 
-    .meto__titulo {
-        text-align: center;
-        padding-block: 1.2rem;
-
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: black;
-            padding: 1rem;
-        }
-    }
-
     .tarjetas {
         display: flex;
         gap: 1.5rem;
         justify-content: center;
+        padding-top: 1.5rem;
         padding-bottom: 3rem;
 
         @include mobile {

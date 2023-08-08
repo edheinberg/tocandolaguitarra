@@ -2,14 +2,40 @@
     background-image: url(../img/background/00.jpg);
     background-size: cover;
 
-    .carrusel_texto {
-        border: 2px solid white;
-        background-color: rgba(0, 0, 0, 0.421);
-        padding: 0.5rem;
+    .carrusel_general {
+        width: 80%;
+        padding: 2rem;
 
-        p {
-            font-size: 1.2rem;
-            font-weight: 500;
+        @include mobile {
+            width: 100%;
+            padding: 1rem;
+        }
+
+        .carrusel_texto {
+            border: 2px solid white;
+            background-color: rgba(0, 0, 0, 0.421);
+            padding: 0.5rem;
+
+            @include mobile {
+                width: 100%;
+                padding: 0;
+            }
+
+            h5 {
+                @include mobile {
+                    font-size: 1rem;
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 500;
+
+                @include mobile {
+                    font-size: 0.8rem;
+                }
+
+            }
         }
     }
 }

@@ -2,12 +2,20 @@
     font-size: 1.5rem;
     font-weight: 700;
 
+    @include mobile {
+        font-size: 1.2rem;
+    }
+
     h2 {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 700;
         color: $secondaryColor;
         padding-top: 2rem;
+
+        @include mobile {
+            font-size: 1.2rem;
+        }
     }
 
     .gt_black {

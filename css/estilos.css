@@ -171,12 +171,22 @@ hr {
   font-size: 1.5rem;
   font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+  .general_titulo {
+    font-size: 1.2rem;
+  }
+}
 .general_titulo h2 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
   color: rgb(212, 116, 48);
   padding-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .general_titulo h2 {
+    font-size: 1.2rem;
+  }
 }
 .general_titulo .gt_black {
   color: black;
@@ -242,20 +252,11 @@ hr {
   background-image: url(../img/FONDO.jpg);
   background-size: cover;
 }
-.metodologia .meto__titulo {
-  text-align: center;
-  padding-block: 1.2rem;
-}
-.metodologia .meto__titulo h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: black;
-  padding: 1rem;
-}
 .metodologia .tarjetas {
   display: flex;
   gap: 1.5rem;
   justify-content: center;
+  padding-top: 1.5rem;
   padding-bottom: 3rem;
 }
 @media screen and (max-width: 768px) {
@@ -312,14 +313,40 @@ hr {
   background-image: url(../img/background/00.jpg);
   background-size: cover;
 }
-.carrusel .carrusel_texto {
+.carrusel .carrusel_general {
+  width: 80%;
+  padding: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .carrusel .carrusel_general {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+.carrusel .carrusel_general .carrusel_texto {
   border: 2px solid white;
   background-color: rgba(0, 0, 0, 0.421);
   padding: 0.5rem;
 }
-.carrusel .carrusel_texto p {
+@media screen and (max-width: 768px) {
+  .carrusel .carrusel_general .carrusel_texto {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carrusel .carrusel_general .carrusel_texto h5 {
+    font-size: 1rem;
+  }
+}
+.carrusel .carrusel_general .carrusel_texto p {
   font-size: 1.2rem;
   font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .carrusel .carrusel_general .carrusel_texto p {
+    font-size: 0.8rem;
+  }
 }
 
 .footer {
