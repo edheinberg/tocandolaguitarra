@@ -771,6 +771,12 @@ hr {
   font-weight: 700;
   width: 40%;
 }
+@media screen and (max-width: 768px) {
+  .sec_ventajas .ventajas_uno .ventajas h3,
+  .sec_ventajas .ventajas_dos .ventajas h3 {
+    font-size: 1.1rem;
+  }
+}
 .sec_ventajas .ventajas_uno .ventajas p,
 .sec_ventajas .ventajas_dos .ventajas p {
   padding: 1rem;
@@ -780,6 +786,13 @@ hr {
   border-radius: 1.5rem;
   font-weight: 500;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .sec_ventajas .ventajas_uno .ventajas p,
+  .sec_ventajas .ventajas_dos .ventajas p {
+    font-size: 0.8rem;
+    text-align: start;
+  }
 }
 
 .wpp {
