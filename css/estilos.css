@@ -382,7 +382,7 @@ hr {
 }
 
 .bi-facebook:hover {
-  background-color: #4040e4;
+  background-color: #3b5998;
   transition: 0.5s;
 }
 
@@ -800,6 +800,21 @@ hr {
   width: 80px;
   bottom: 2rem;
   right: 2rem;
+  z-index: 1;
+}
+.wpp:hover {
+  animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+@keyframes pulsate-bck {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @keyframes shake-bottom {
   0%, 100% {
@@ -837,19 +852,16 @@ hr {
        column-gap: 2rem;
   row-gap: 2rem;
 }
-
-.padre_canciones h2 {
-  margin-block: 15px;
-}
-
-.canciones {
+.generos .padre_canciones .canciones {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   padding: 15px 15px 15px 15px;
 }
-
-.icono_partitura {
+.generos .padre_canciones .canciones h2 {
+  margin-block: 15px;
+}
+.generos .padre_canciones .canciones .icono_partitura {
   width: 15px;
 }
 
@@ -858,24 +870,19 @@ hr {
   margin-left: 1rem;
   margin-top: 2rem;
 }
-
-.padre_filtro {
+.cuerpo .padre_filtro {
   margin-block: 18px;
 }
-
-.padre_filtro h2 {
+.cuerpo .padre_filtro h2 {
   font-size: 20px;
 }
-
-.hijos_filtros {
+.cuerpo .padre_filtro .hijos_filtros {
   margin-block: 20px;
 }
-
-.items_filtros {
+.cuerpo .padre_filtro .hijos_filtros .titulo_filtros {
+  font-size: 16px;
+}
+.cuerpo .padre_filtro .hijos_filtros .items_filtros {
   margin-inline: 15px;
   font-size: 14px;
-}
-
-.titulo_filtros {
-  font-size: 16px;
 }/*# sourceMappingURL=estilos.css.map */
