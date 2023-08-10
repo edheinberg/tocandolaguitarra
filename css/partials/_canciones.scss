@@ -1,61 +1,81 @@
-.filtros {
-    display: flex;
-    column-gap: 1.3rem;
-    justify-content: end;
-    margin: 20px 20px 20px 20px
-}
+.hero_canciones {
+    @extend %background;
 
-.cuerpo {
-    display: flex;
-    margin-left: 1rem;
-    margin-top: 2rem;
+    .filtros {
+        display: flex;
+        gap: 1.3rem;
+        justify-content: end;
+        padding: 1.5rem;
+    }
 
-    .padre_filtro {
-        margin-block: 18px;
+    .cuerpo {
+        display: flex;
+        margin-left: 1rem;
+        margin-top: 2rem;
 
-        h2 {
-            font-size: 20px;
-        }
+        .padre_filtro {
+            margin-block: 18px;
 
-        .hijos_filtros {
-            margin-block: 20px;
-
-            .titulo_filtros {
-                font-size: 16px;
+            h2 {
+                font-size: 20px;
             }
 
-            .items_filtros {
-                margin-inline: 15px;
-                font-size: 14px;
+            .hijos_filtros {
+                margin-block: 20px;
+
+                .titulo_filtros {
+                    font-size: 16px;
+                }
+
+                .items_filtros {
+                    margin-inline: 15px;
+                    font-size: 14px;
+                }
             }
         }
     }
-}
 
-.generos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
+    .generos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+        width: 100%;
 
-    .padre_canciones {
+        .padre_canciones {
+            max-width: 100%;
 
-        .canciones {
-            display: flex;
-            flex-direction: column;
-            margin-left: 20px;
-            padding: 15px 15px 15px 15px;
+            .canciones {
+                padding: 1rem;
+                margin: 0;
 
-            h2 {
-                margin-block: 15px;
+                h2 {
+                    padding: 0.5rem;
+                    text-align: center;
+                    font-size: 1.4rem;
+                }
+
+                .canciones_cuerpo {
+                    background-color: $mainColor;
+                    padding: 1.2rem;
+                    border-radius: 1.5rem;
+                    @extend %sombreado;
+
+                    li {
+                        @include flex(row, start, center);
+                        list-style-position: inside;
+                        font-size: 1rem;
+
+                        .icono_partitura {
+                            padding-left: 0.8rem;
+                            color: black;
+                        }
+                    }
+                }
+
+
             }
 
-            .icono_partitura {
-                padding-left: 0.8rem;
-                color: black;
-            }
         }
-
     }
 }

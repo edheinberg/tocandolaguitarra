@@ -1,8 +1,7 @@
 .contacto {
     @include flex(row, center, center);
     gap: 1rem;
-    background-color: #FAD961;
-    background-image: linear-gradient(90deg, #FAD961 0%, #ff9149 100%);
+    @extend %background;
 
     .container {
         -webkit-animation: roll-in-left .7s ease-out both;

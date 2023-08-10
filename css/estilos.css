@@ -1,7 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap");
-.hero_clases .clases_precios .suscripciones .cuerpo_clase, .testimonio .testimonios .testimonio_body, .presentacion .presentacion_texto, .presentacion .foto_profe, .metodologia .tarjetas .card, .institucional .institucional__main {
+.hero_canciones .generos .padre_canciones .canciones .canciones_cuerpo, .hero_clases .clases_precios .suscripciones .cuerpo_clase, .testimonio .testimonios .testimonio_body, .presentacion .presentacion_texto, .presentacion .foto_profe, .metodologia .tarjetas .card, .institucional .institucional__main {
   box-shadow: 5px 5px 10px 0 black;
+}
+
+.hero_canciones, .sec_ventajas .ventajas_uno .ventajas p,
+.sec_ventajas .ventajas_dos .ventajas p, .hero_clases, .contacto, .fotos_alumnos, .footer {
+  background-color: #FAD961;
+  background-image: linear-gradient(90deg, #FAD961 0%, #ff9149 100%);
 }
 
 * {
@@ -356,8 +362,6 @@ hr {
   align-items: center;
   gap: 0.6rem;
   padding-top: 1.5rem;
-  background-image: url(../img/FONDO.jpg);
-  background-size: cover;
 }
 .footer .logopie {
   width: 70px;
@@ -462,10 +466,6 @@ hr {
   font-style: italic;
 }
 
-.fotos_alumnos {
-  background-color: #FAD961;
-  background-image: linear-gradient(90deg, #FAD961 0%, #ff9149 100%);
-}
 .fotos_alumnos .galeria {
   display: grid;
   padding: 2rem;
@@ -550,8 +550,6 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-color: #FAD961;
-  background-image: linear-gradient(90deg, #FAD961 0%, #ff9149 100%);
 }
 .contacto .container {
   animation: roll-in-left 0.7s ease-out both;
@@ -628,8 +626,6 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FAD961;
-  background-image: linear-gradient(90deg, #FAD961 0%, #ff9149 100%);
 }
 .hero_clases .clases_precios {
   display: flex;
@@ -780,8 +776,6 @@ hr {
 .sec_ventajas .ventajas_uno .ventajas p,
 .sec_ventajas .ventajas_dos .ventajas p {
   padding: 1rem;
-  background-image: url(../img/FONDO.jpg);
-  background-size: cover;
   text-align: center;
   border-radius: 1.5rem;
   font-weight: 500;
@@ -837,54 +831,66 @@ hr {
     transform: rotate(2deg);
   }
 }
-.filtros {
+.hero_canciones .filtros {
   display: flex;
-  -moz-column-gap: 1.3rem;
-       column-gap: 1.3rem;
+  gap: 1.3rem;
   justify-content: end;
-  margin: 20px 20px 20px 20px;
+  padding: 1.5rem;
 }
-
-.cuerpo {
+.hero_canciones .cuerpo {
   display: flex;
   margin-left: 1rem;
   margin-top: 2rem;
 }
-.cuerpo .padre_filtro {
+.hero_canciones .cuerpo .padre_filtro {
   margin-block: 18px;
 }
-.cuerpo .padre_filtro h2 {
+.hero_canciones .cuerpo .padre_filtro h2 {
   font-size: 20px;
 }
-.cuerpo .padre_filtro .hijos_filtros {
+.hero_canciones .cuerpo .padre_filtro .hijos_filtros {
   margin-block: 20px;
 }
-.cuerpo .padre_filtro .hijos_filtros .titulo_filtros {
+.hero_canciones .cuerpo .padre_filtro .hijos_filtros .titulo_filtros {
   font-size: 16px;
 }
-.cuerpo .padre_filtro .hijos_filtros .items_filtros {
+.hero_canciones .cuerpo .padre_filtro .hijos_filtros .items_filtros {
   margin-inline: 15px;
   font-size: 14px;
 }
-
-.generos {
+.hero_canciones .generos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-  row-gap: 2rem;
+  gap: 2rem;
+  width: 100%;
 }
-.generos .padre_canciones .canciones {
+.hero_canciones .generos .padre_canciones {
+  max-width: 100%;
+}
+.hero_canciones .generos .padre_canciones .canciones {
+  padding: 1rem;
+  margin: 0;
+}
+.hero_canciones .generos .padre_canciones .canciones h2 {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.hero_canciones .generos .padre_canciones .canciones .canciones_cuerpo {
+  background-color: burlywood;
+  padding: 1.2rem;
+  border-radius: 1.5rem;
+}
+.hero_canciones .generos .padre_canciones .canciones .canciones_cuerpo li {
   display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  padding: 15px 15px 15px 15px;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  list-style-position: inside;
+  font-size: 1rem;
 }
-.generos .padre_canciones .canciones h2 {
-  margin-block: 15px;
-}
-.generos .padre_canciones .canciones .icono_partitura {
+.hero_canciones .generos .padre_canciones .canciones .canciones_cuerpo li .icono_partitura {
   padding-left: 0.8rem;
   color: black;
 }/*# sourceMappingURL=estilos.css.map */

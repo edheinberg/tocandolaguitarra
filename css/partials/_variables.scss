@@ -9,6 +9,11 @@ $secondaryColor: rgb(212, 116, 48);
     box-shadow: 5px 5px 10px 0 black;
 }
 
+%background {
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #ff9149 100%);
+}
+
 @mixin flex($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
