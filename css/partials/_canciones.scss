@@ -1,34 +1,8 @@
 .filtros {
     display: flex;
-    column-gap: 20px;
+    column-gap: 1.3rem;
     justify-content: end;
     margin: 20px 20px 20px 20px
-}
-
-.generos {
-    display: flex;
-    flex-direction: row;
-    column-gap: 2rem;
-    row-gap: 2rem;
-
-    .padre_canciones {
-
-        .canciones {
-            display: flex;
-            flex-direction: column;
-            margin-left: 20px;
-            padding: 15px 15px 15px 15px;
-
-            h2 {
-                margin-block: 15px;
-            }
-
-            .icono_partitura {
-                width: 15px;
-            }
-        }
-
-    }
 }
 
 .cuerpo {
@@ -55,5 +29,33 @@
                 font-size: 14px;
             }
         }
+    }
+}
+
+.generos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+    .padre_canciones {
+
+        .canciones {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            padding: 15px 15px 15px 15px;
+
+            h2 {
+                margin-block: 15px;
+            }
+
+            .icono_partitura {
+                padding-left: 0.8rem;
+                color: black;
+            }
+        }
+
     }
 }
