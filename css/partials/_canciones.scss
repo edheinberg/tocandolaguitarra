@@ -10,26 +10,37 @@
 
     .cuerpo {
         display: flex;
-        margin-left: 1rem;
-        margin-top: 2rem;
+        padding: 1rem;
 
         .padre_filtro {
-            margin-block: 18px;
+            padding: 1.5rem;
+            border-color: black;
+            border-style: dashed;
+            height: 100%;
 
             h2 {
-                font-size: 20px;
+                font-size: 1.3rem;
+                font-weight: 700;
+                text-align: center;
             }
 
             .hijos_filtros {
-                margin-block: 20px;
+                padding-block: 1rem;
 
                 .titulo_filtros {
-                    font-size: 16px;
+                    font-size: 1rem;
+                    font-weight: 700;
                 }
 
                 .items_filtros {
-                    margin-inline: 15px;
-                    font-size: 14px;
+                    margin-inline: 1rem;
+                    font-size: 0.9rem;
+
+                    li:hover {
+                        font-weight: 500;
+                        transform: scale(1.05);
+                        text-shadow: 1px 1px 2px $secondaryColor;
+                    }
                 }
             }
         }
@@ -39,32 +50,41 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 1.5rem;
         width: 100%;
+        padding: 1rem;
+        padding-left: 0;
 
         .padre_canciones {
             max-width: 100%;
 
             .canciones {
-                padding: 1rem;
                 margin: 0;
 
                 h2 {
                     padding: 0.5rem;
                     text-align: center;
                     font-size: 1.4rem;
+                    font-weight: 700;
                 }
 
                 .canciones_cuerpo {
                     background-color: $mainColor;
-                    padding: 1.2rem;
+                    padding: 1.5rem;
                     border-radius: 1.5rem;
                     @extend %sombreado;
+                    line-height: 1.8rem;
 
                     li {
                         @include flex(row, start, center);
-                        list-style-position: inside;
                         font-size: 1rem;
+                        transition: 0.3s;
+
+                        &:hover {
+                            font-weight: 500;
+                            transform: scale(1.05);
+                            text-shadow: 1px 1px 2px $secondaryColor;
+                        }
 
                         .icono_partitura {
                             padding-left: 0.8rem;
