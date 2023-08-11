@@ -836,6 +836,7 @@ hr {
   gap: 1.3rem;
   justify-content: end;
   padding: 1.5rem;
+  font-family: "Zilla Slab", serif;
 }
 .hero_canciones .cuerpo {
   display: flex;
