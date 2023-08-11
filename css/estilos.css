@@ -250,6 +250,8 @@ hr {
 @media screen and (max-width: 768px) {
   .institucional iframe {
     max-width: 100%;
+    aspect-ratio: 16/9;
+    height: auto;
   }
 }
 
@@ -591,6 +593,14 @@ hr {
   .contacto {
     display: flex;
     flex-direction: column;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacto .mapa {
+    aspect-ratio: 16/9;
+    height: auto;
   }
 }
 
