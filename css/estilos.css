@@ -838,9 +838,31 @@ hr {
   padding: 1.5rem;
   font-family: "Zilla Slab", serif;
 }
+@media screen and (max-width: 768px) {
+  .hero_canciones .filtros {
+    padding: 1rem;
+    gap: 0.7rem;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero_canciones .filtros .form-control {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero_canciones .filtros .bt_canciones {
+    font-size: 0.7rem;
+  }
+}
 .hero_canciones .cuerpo {
   display: flex;
   padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .hero_canciones .cuerpo {
+    flex-direction: column;
+  }
 }
 .hero_canciones .cuerpo .padre_filtro {
   padding: 1.5rem;
@@ -854,11 +876,24 @@ hr {
   text-align: center;
 }
 .hero_canciones .cuerpo .padre_filtro .hijos_filtros {
-  padding-block: 1rem;
+  padding-block: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  .hero_canciones .cuerpo .padre_filtro .hijos_filtros {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .hero_canciones .cuerpo .padre_filtro .hijos_filtros .titulo_filtros {
   font-size: 1rem;
   font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .hero_canciones .cuerpo .padre_filtro .hijos_filtros .titulo_filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .hero_canciones .cuerpo .padre_filtro .hijos_filtros .items_filtros {
   margin-inline: 1rem;
@@ -878,11 +913,26 @@ hr {
   padding: 1rem;
   padding-left: 0;
 }
+@media screen and (max-width: 768px) {
+  .hero_canciones .generos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding: 0.5rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .hero_canciones .generos .padre_canciones {
   max-width: 100%;
 }
 .hero_canciones .generos .padre_canciones .canciones {
   margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .hero_canciones .generos .padre_canciones .canciones {
+    padding-left: 0;
+  }
 }
 .hero_canciones .generos .padre_canciones .canciones h2 {
   padding: 0.5rem;
@@ -901,7 +951,7 @@ hr {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   transition: 0.3s;
 }
 .hero_canciones .generos .padre_canciones .canciones .canciones_cuerpo li:hover {
